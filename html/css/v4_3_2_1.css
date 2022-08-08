@@ -1,0 +1,1038 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bellota+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+body {
+    background:#f2f3f7 ;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 90px;
+    /* background-color: rgb(0, 0, 0); */
+    background:#0b0b0b ;
+    border-bottom: 1px rgba(235, 8, 8, 0.493) solid;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo h1 {
+    color: rgb(249, 212, 4);
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 4px;
+    padding-left: 10px;
+    font-weight: 800;
+}
+/* .logo img {
+    width: 100px;
+    height: 0px;
+} */
+/* .logo img {
+    width: 300px;
+    height: 80px;
+   
+} */
+.nav-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.open-close-bar {
+    color: white;
+    font-size: 38px;
+    cursor: pointer;
+}
+.menu-item {
+    display: inline-flex;
+
+}
+.fas {
+    padding-right:10px;
+}
+.menu-item  li {
+    list-style: none;
+    margin: 0 10px;
+    padding: 10px;
+}
+.menu-item li:hover {
+    /* background: red; */
+    border-bottom: 1px white solid;
+    transition: all ease 0.3s;
+}
+.menu-item li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 15px;
+
+}
+.open {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    visibility: hidden;
+}
+.close {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    visibility: hidden;
+}
+.nav-container.active .open {
+    visibility: hidden;
+}
+.nav-container.active .close {
+    visibility: visible;
+}
+
+.version {
+    margin-top: 20px;
+}
+
+.title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#0b0b0b;
+    text-align:center;
+    font-size : 40px;
+    font-weight :700;
+    text-transform:uppercase;
+    position:relative;
+    margin-bottom: 60px;
+    user-select: none;
+}
+ .title::after {
+    border-bottom: 1px rgb(246, 85, 4) solid;
+    width: 10%;
+    height: 2px;
+    position: absolute;
+    content:'';
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-6px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.box-container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+.box-container .box .photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 650px;
+    background: #f2f3f7;
+    box-shadow:0.6em 0.6em 1.2em #c3ccd8,
+                -0.5em -0.5em 1em #ffffff;
+   border-radius: 20px;
+}
+.box-container .box .photo img {
+    width: 950px;
+    height: 600px;
+}
+.box-container .box .detial {
+    width: 650px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: #f2f3f7;
+    box-shadow:0.6em 0.6em 1.2em #c3ccd8,
+                -0.5em -0.5em 1em #ffffff;
+   border-radius: 20px;
+ 
+}
+.box-container .info {
+    background-color: rgb(243, 212, 12);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.box-container .info h4 {
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.box-container .box .detial h3 {
+   font-size: 25px;
+   padding-left: 50px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box-container .box .detial .download {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.box-container .box .detial .download a {
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    border-radius: 5px;
+    padding: 12px 8px;
+    border-radius: 10px;
+    background-color: rgb(252, 240, 8);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.box-container .box .detial .download a:hover {
+    background-color: orange;
+}
+@media(max-width:1680px){
+ 
+    .menu-item {
+        position: fixed;
+        overflow: hidden ;
+        top: 80px;
+        width: 100%;
+        height: 0px;
+        display: block;
+        background-color: rgb(50, 49, 49);
+    }
+    .menu-item li {
+        margin-top: 10px;
+     
+    }
+    .menu-item li a {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        padding: 20px 15px;
+    }
+    .menu-item li a:hover {
+        color: yellow;
+        border-bottom: 1px yellow solid;
+    }
+    .open {
+        visibility: visible;
+       }
+    .nav-container.active .menu-item{
+        height: 420px;
+        transition: all ease 0.5s;
+    }
+
+    .menu-item li:hover {
+        border-bottom: none;
+    }
+    .title {
+        font-size: 38px;
+    }
+    .box-container .box .photo {
+        width: 900px;
+        height: 650px;
+    }
+    .box-container .box .photo img {
+        width: 850px;
+        height: 550px;
+    }
+    .box-container .box .detial {
+        width: 600px;
+        height: 650px;
+        gap: 50px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 50px;
+
+    }
+    .box-container .info h4 {
+        font-size: 33px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 23px;
+       padding-left: 30px;
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .box-container .box .detial .download a {
+        font-size: 19px;
+        padding: 12px 8px;
+    }
+
+}
+@media(max-width:1500px){
+    .menu-item li a {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 36px;
+    }
+    .box-container .box .photo {
+        width: 800px;
+        height: 600px;
+    }
+    .box-container .box .photo img {
+        width: 730px;
+        height: 480px;
+    }
+    .box-container .box .detial {
+        width: 550px;
+        height: 600px;
+        gap: 43px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 46px;
+
+    }
+    .box-container .info h4 {
+        font-size: 30px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 21px;
+       padding-left: 30px;
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: row;
+        gap: 9px;
+    }
+    .box-container .box .detial .download a {
+        font-size: 19px;
+        padding: 10px 8px;
+    }
+}
+@media(max-width:1400px){
+   
+       .nav-container.active .menu-item{
+        height: 420px;
+        transition: all ease 0.5s;
+    }
+
+    .menu-item li:hover {
+        border-bottom: none;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .box-container .box {
+        gap: 20px;
+    }
+    .box-container .box .photo {
+        width: 730px;
+        height: 570px;
+    }
+    .box-container .box .photo img {
+        width: 660px;
+        height: 440px;
+    }
+    .box-container .box .detial {
+        width: 500px;
+        height: 560px;
+        gap: 43px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 43px;
+
+    }
+    .box-container .info h4 {
+        font-size: 27px;
+        padding-top: 10px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 20px;
+       padding-left: 30px;
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .box-container .box .detial .download a {
+        font-size: 16px;
+        padding: 10px 5px;
+    }
+
+}
+@media(max-width:1300px){
+   
+    .nav-container.active .menu-item{
+     height: 410px;
+ }
+
+ .title {
+     font-size: 32px;
+ }
+ .box-container .box {
+     gap: 18px;
+ }
+ .box-container .box .photo {
+     width: 680px;
+     height: 520px;
+ }
+ .box-container .box .photo img {
+     width: 600px;
+     height: 400px;
+ }
+ .box-container .box .detial {
+     width: 450px;
+     height: 520px;
+     gap: 40px;
+    
+ }
+ .box-container .info {
+     width: 100%;
+     height: 40px;
+
+ }
+ .box-container .info h4 {
+     font-size: 25px;
+     padding-top: 5px;
+ }
+ .box-container .box .detial h3 {
+    font-size: 16px;
+    padding-left: 30px;
+ }
+ .box-container .box .detial .download {
+     display: flex;
+     flex-direction: row;
+     gap: 5px;
+ }
+ .box-container .box .detial .download a {
+     font-size: 16px;
+     padding: 10px 5px;
+ }
+
+}
+@media(max-width:1100px){
+       .nav-container.active .menu-item{
+        height: 420px;
+        transition: all ease 0.5s;
+    }
+
+    .menu-item li:hover {
+        border-bottom: none;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .box-container .box {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .box-container .box .photo {
+        width: 730px;
+        height: 560px;
+    }
+    .box-container .box .photo img {
+        width: 660px;
+        height: 420px;
+    }
+    .box-container .box .detial {
+        width: 730px;
+        height: 630px;
+        gap: 53px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 45px;
+
+    }
+    .box-container .info h4 {
+        font-size: 29px;
+        padding-top: 10px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 23px;
+       padding-left: 30px;
+
+      
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .box-container .box .detial .download a {
+        font-size: 19px;
+        padding: 15px 10px;
+    }
+}
+@media(max-width:1000px){
+   
+    .logo h1 {
+        font-size: 40px;
+        padding-top: 10px;
+    } 
+    .menu-item li a {
+        text-decoration: none;
+        color: white;
+        font-size: 19px;
+        padding: 15px 15px;   
+    }
+    .title {
+        font-size: 35px;
+    }
+    .box-container .box {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .box-container .box .photo {
+        width: 700px;
+        height: 500px;
+    }
+    .box-container .box .photo img {
+        width: 620px;
+        height: 380px;
+    }
+    .box-container .box .detial {
+        width: 690px;
+        height: 520px;
+        gap: 35px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 50px;
+
+    }
+    .box-container .info h4 {
+        font-size: 29px;
+        padding-top: 5px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 22px;
+       padding-left: 30px;
+
+      
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .box-container .box .detial .download a {
+        font-size: 16px;
+        padding: 14px 10px;
+    }
+
+}
+@media(max-width:750px){
+   
+    .logo h1 {
+        font-size: 40px;
+        padding-top: 10px;
+    } 
+    .menu-item li a {
+        text-decoration: none;
+        color: white;
+        font-size: 19px;
+        padding: 15px 15px;   
+    }
+    .title {
+        font-size: 32px;
+    }
+    .box-container .box {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .box-container .box .photo {
+        width: 650px;
+        height: 450px;
+    }
+    .box-container .box .photo img {
+        width: 580px;
+        height: 340px;
+    }
+    .box-container .box .detial {
+        width: 650px;
+        height: 520px;
+        gap: 35px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 50px;
+
+    }
+    .box-container .info h4 {
+        font-size: 27px;
+        padding-top: 8px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 20px;
+       padding-left: 30px;
+
+      
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .box-container .box .detial .download a {
+        font-size: 16px;
+        padding: 14px 10px;
+    }
+
+}
+@media(max-width:650px){
+   
+    .logo h1 {
+        font-size: 40px;
+        padding-top: 10px;
+    } 
+    .menu-item li a {
+        font-size: 19px;
+        padding: 15px 15px;   
+    }
+    .title {
+        font-size: 32px;
+    }
+    .box-container .box {
+        gap: 20px;
+        flex-direction: column;
+    }
+    .box-container .box .photo {
+        width: 580px;
+        height: 420px;
+    }
+    .box-container .box .photo img {
+        width: 520px;
+        height: 310px;
+    }
+    .box-container .box .detial {
+        width: 580px;
+        height: 470px;
+        gap: 30px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 50px;
+
+    }
+    .box-container .info h4 {
+        font-size: 27px;
+        padding-top: 8px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 20px;
+       padding-left: 30px;
+
+      
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .box-container .box .detial .download a {
+        font-size: 16px;
+        padding: 14px 10px;
+    }
+
+}
+@media(max-width:600px){
+    .nav-container.active .menu-item{
+        height: 380px;
+    }
+    .logo h1 {
+        font-size: 40px;
+        padding-top: 10px;
+    }
+    .menu-item li a {
+        text-decoration: none;
+        color: white;
+        font-size: 19px;
+        padding: 15px 15px;  
+    }
+    .title {
+        font-size: 30px;
+    }
+    .box-container .box {
+        gap: 15px;
+    }
+    .box-container .box .photo {
+        width: 520px;
+        height: 400px;
+    }
+    .box-container .box .photo img {
+        width: 480px;
+        height: 300px;
+    }
+    .box-container .box .detial {
+        width: 520px;
+        height: 420px;
+        gap: 25px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 50px;
+
+    }
+    .box-container .info h4 {
+        font-size: 25px;
+        padding-top: 10px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 18px;
+       padding-left: 30px;
+
+      
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    
+    }
+    .box-container .box .detial .download a {
+        font-size: 14px;
+        padding: 14px 8px; 
+    }
+}
+@media(max-width:550px){
+    .box-container .box .photo {
+        width: 480px;
+        height: 370px;
+    }
+    .box-container .box .photo img {
+        width: 410px;
+        height: 270px;
+    }
+    .box-container .box .detial {
+        width: 480px;
+        height: 420px;
+        gap: 25px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 48px;
+
+    }
+    .box-container .info h4 {
+        font-size: 22px;
+        padding-top: 10px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 17px;
+       padding-left: 30px;
+
+      
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    
+    }
+    .box-container .box .detial .download a {
+        font-size: 14px;
+        padding: 14px 5px; 
+    }
+}
+@media(max-width:500px){
+    .nav-container.active .menu-item{
+        height: 340px;
+    }
+    .logo h1 {
+        font-size: 33px;
+        padding-top: 10px;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .menu-item li a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        padding: 15px 15px;  
+    }
+    
+    .open-close-bar {
+        font-size: 30px;
+    }
+    .box-container .box .photo {
+        width: 430px;
+        height: 330px;
+    }
+    .box-container .box .photo img {
+        width: 380px;
+        height: 250px;
+    }
+    .box-container .box .detial {
+        width: 420px;
+        height: 460px;
+        gap: 22px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 43px;
+
+    }
+    .box-container .info h4 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 14px;
+       padding-left: 10px;   
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    
+    }
+    .box-container .box .detial .download a {
+        font-size: 13px;
+        padding: 14px 5px; 
+        width: 150px;
+    }
+}
+@media(max-width:450px){
+    .nav-container.active .menu-item{
+        height: 340px;
+    }
+    .logo h1 {
+        font-size: 31px;
+        padding-top: 10px;
+    }
+   
+    .menu-item li a {
+        font-size: 13px;
+        padding: 13px ;
+    
+    }
+    .open-close-bar {
+        font-size: 29px;
+    }
+    .box-container .box .photo {
+        width: 380px;
+        height: 280px;
+    }
+    .box-container .box .photo img {
+        width: 340px;
+        height: 220px;
+    }
+    .box-container .box .detial {
+        width: 380px;
+        height: 430px;
+        gap: 22px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 40px;
+
+    }
+    .box-container .info h4 {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 12px;
+       padding-left: 10px;   
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    
+    }
+    .box-container .box .detial .download a {
+        font-size: 11px;
+        padding: 14px 5px; 
+        width: 150px;
+    }
+}
+@media(max-width:400px){
+   
+    .logo h1 {
+        font-size: 27px;
+        padding-top: 10px;
+    }
+   
+    .menu-item li a {
+        font-size: 13px;
+        padding: 13px ;
+    
+    }
+    .open-close-bar {
+        font-size: 29px;
+    }
+    .box-container .box .photo {
+        width: 350px;
+        height: 245px;
+    }
+    .box-container .box .photo img {
+        width: 300px;
+        height: 180px;
+    }
+    .box-container .box .detial {
+        width: 350px;
+        height: 380px;
+        gap: 13px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 35px;
+
+    }
+    .box-container .info h4 {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 11px;
+       padding-left: 10px;   
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    
+    }
+    .box-container .box .detial .download a {
+        font-size: 11px;
+        padding: 12px 5px; 
+        width: 120px;
+    }
+   
+}
+@media(max-width:350px){
+   .title::after {
+    width: 30%;
+   }
+    .logo h1 {
+        font-size: 20px;
+        padding-top: 15px;
+        letter-spacing: 2px;
+    }
+   
+    .menu-item li a {
+        font-size: 12px;
+        padding: 13px ; 
+    }
+    .box-container .box .photo {
+        width: 300px;
+        height: 225px;
+    }
+    .box-container .box .photo img {
+        width: 260px;
+        height: 160px;
+    }
+    .box-container .box .detial {
+        width: 295px;
+        height: 320px;
+        gap: 10px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 35px;
+
+    }
+    .box-container .info h4 {
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 11px;
+       padding-left: 10px;   
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    
+    }
+    .box-container .box .detial .download a {
+        font-size: 9px;
+        padding: 10px 5px; 
+        width: 100px;
+    }
+   
+}
+@media(max-width:290px){
+   
+    .logo h1 {
+        font-size: 19px;
+        padding-top: 15px;
+        letter-spacing: 2px;
+    }
+   
+    .menu-item li a {
+        font-size: 12px;
+        padding: 13px ;
+    
+    }
+    .title {
+        font-size: 18px;
+    }
+    .box-container .box .photo {
+        width: 260px;
+        height: 200px;
+    }
+    .box-container .box .photo img {
+        width: 220px;
+        height: 140px;
+    }
+    .box-container .box .detial {
+        width: 250px;
+        height: 260px;
+        gap: 5px;
+       
+    }
+    .box-container .info {
+        width: 100%;
+        height: 30px;
+
+    }
+    .box-container .info h4 {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 9px;
+       padding-left: 10px;   
+    }
+    .box-container .box .detial .download {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    
+    }
+    .box-container .box .detial .download a {
+        font-size: 9px;
+        padding: 10px 5px; 
+        width: 90px;
+    }
+   
+}

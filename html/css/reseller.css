@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bellota+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+body {
+    background:#f2f3f7 ;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 90px;
+    /* background-color: rgb(0, 0, 0); */
+    background:#0b0b0b ;
+    border-bottom: 1px rgba(235, 8, 8, 0.493) solid;
+    position: static;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo h1 {
+    color: rgb(249, 212, 4);
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 4px;
+    padding-left: 10px;
+    font-weight: 800;
+}
+
+.nav-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.open-close-bar {
+    color: white;
+    font-size: 38px;
+    cursor: pointer;
+}
+.menu-item {
+    display: inline-flex;
+
+}
+.fas {
+    padding-right:10px;
+}
+.menu-item  li {
+    list-style: none;
+    margin: 0 10px;
+    padding: 10px;
+}
+.menu-item li:hover {
+    /* background: red; */
+    border-bottom: 1px white solid;
+    transition: all ease 0.3s;
+}
+.menu-item li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px 15px;
+
+}
+.open {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    visibility: hidden;
+}
+.close {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    visibility: hidden;
+}
+.nav-container.active .open {
+    visibility: hidden;
+}
+.nav-container.active .close {
+    visibility: visible;
+}
+
+ .title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#0b0b0b;
+    text-align:center;
+    font-size : 40px;
+    font-weight :700;
+    text-transform:uppercase;
+    position:relative;
+    margin-bottom: 60px;
+    user-select: none;
+}
+ .title::after {
+    border-bottom: 1px rgb(246, 85, 4) solid;
+    width: 20%;
+    height: 2px;
+    position: absolute;
+    content:'';
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-5px;
+}
+.reseller-container {
+    margin-top: 80px;
+}
+.developer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    width: 100%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .card {
+    width: 400px;
+    height: 550px;
+    margin: 20px;
+    padding: 60px 30px;
+    background: #f2f3f7;
+    box-shadow:0.6em 0.6em 1.2em #d2dce9,
+                -0.5em -0.5em 1em #ffffff;
+   border-radius: 20px;
+   cursor: pointer;
+   user-select: none;
+}
+.container .card:hover {
+    box-shadow: 2px 2px 27px 7px rgba(224,0,0,0.48);
+    -webkit-box-shadow: 2px 2px 27px 7px rgba(224,0,0,0.48);
+    -moz-box-shadow: 2px 2px 27px 7px rgba(224,0,0,0.48);
+}
+.container .card .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container .card .content .imgBx {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 6px rgba(255, 255, 255, 0.773) solid;
+}
+.container .card .content .imgBx img {
+    /* position: absolute; */
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content .contentBx {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .card .content .contentBx h4 {
+      font-size: 33px;
+      stroke: 1px #a61515;
+}
+.container .card .content .contentBx h5 {
+    font-size: 25px;
+    color: rgb(62, 62, 62);
+}
+.container .card .sci a {
+    font-size: 30px;
+    padding: 8px 10px;
+    background: rgb(250, 250, 250);
+    border-radius: 50%;
+    border: 1px rgb(250, 250, 250) solid;
+}
+.container .card .sci a:hover {
+     /* background-color: #0b78b3; */
+     border: 1px rgb(254, 28, 3) solid;
+}
+.youtube {
+    color: red;
+}
+.youtube:hover {
+    color: rgb(189, 7, 7);
+}
+.fb ,.msg {
+    color: rgb(32, 32, 233);
+}
+.fb:hover {
+    color: rgb(8, 8, 165);
+}
+.msg:hover {
+    color: rgb(9, 9, 177);
+}
+.tlg {
+    color: #08a4f8;
+}
+.tlg:hover {
+    color: #0b78b3;
+}
+.flag {
+    margin-top: 20px;
+}
+.inst {
+    color: rgb(245, 3, 3);
+}
+.inst:hover {
+    color: rgb(151, 6, 6);
+}
+.twi {
+    color: #08a4f8;
+}
+.twi:hover {
+    color: #0680c2
+}
+.what {
+    color: rgb(36, 213, 9);  
+}
+.what:hover {
+    color: rgb(8, 111, 8);
+}
+.snap {
+    color: rgb(255, 142, 5);
+}
+.snap:hover {
+    color: rgb(234, 9, 9);
+}
+.vib {
+    color: rgb(105, 4, 177);
+}
+.vib:hover {
+    color: rgba(106, 27, 163, 0.761);
+}
+@media(max-width:1600px) {
+   
+    .menu-item {
+        position: absolute;
+        top: 80px;
+        background: rgb(53, 53, 53);
+        width: 100%;
+        left: 0;
+        overflow: hidden;
+        height: 0;
+       }   
+       .menu-item li a {
+        color: rgb(248, 248, 248);
+        font-size: 18px;
+        padding: 10px 10px;
+
+       } 
+       .menu-item li {
+        padding-top: 20px;
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+       }
+       .menu-item li:hover {
+        background-color: rgb(251, 239, 6);
+       } 
+       .menu-item li a:hover {
+          color: black; 
+       }
+       .open {
+        visibility: visible;
+       }
+       .nav-container.active .menu-item {
+          height: 70px;
+          transition: all ease-in-out 0.3s;
+       }
+   
+}
+@media(max-width:1000px) {
+    .menu-item li a {
+        font-size: 16px;
+        padding: 10px 8px;
+       } 
+}
+@media(max-width:850px) {
+
+    .menu-item li a {
+        font-size: 15px;
+        padding: 6px 0px;
+        display: flex;
+        justify-content: center;
+       } 
+    .menu-item li .fas {
+        visibility: hidden;
+    }
+}
+@media(max-width:750px) {
+    .logo h1 {
+        font-size: 38px;
+        padding-top: 10px;
+    }
+    .menu-item li a {
+        font-size: 13px;
+        padding: 0px 0px;
+       } 
+    .title {
+        font-size: 35px;
+    }
+    .title::after {
+        width: 50%;
+    }
+}
+@media(max-width:550px) {
+    .logo h1 {
+        font-size: 32px;
+    }
+    .title {
+        font-size: 32px;
+    }
+    .title::after {
+        width: 50%;
+    }
+    .container .card {
+        width: 350px;
+        height: 500px;
+        margin: 20px;
+        padding: 60px 30px;
+    }
+    .container .card .content .imgBx {
+        width: 150px;
+        height: 150px;
+    }
+    .container .card .content .contentBx {
+        margin: 20px 0;
+    }
+    .container .card .content .contentBx h4 {
+          font-size: 30px;
+          stroke: 1px #a61515;
+    }
+    .container .card .content .contentBx h5 {
+        font-size: 20px;
+        color: rgb(62, 62, 62);
+    }
+    .container .card .sci a {
+        font-size: 25px;
+        padding: 8px 10px;
+    }
+
+}
+@media(max-width:450px) {
+    .logo h1 {
+        font-size: 30px;
+    }
+    .faz {
+        font-size: 30px;
+    }
+    .title {
+        font-size: 29px;
+    }
+    .container .card {
+        width: 330px;
+        height: 430px;
+        margin: 15px;
+        padding: 60px 30px;
+    }
+    .container .card .content .imgBx {
+        width: 125px;
+        height: 125px;
+    }
+    .container .card .content .contentBx {
+        margin: 20px 0;
+    }
+    .container .card .content .contentBx h4 {
+          font-size: 28px;
+          stroke: 1px #a61515;
+    }
+    .container .card .content .contentBx h5 {
+        font-size: 20px;
+        color: rgb(62, 62, 62);
+    }
+    .container .card .sci a {
+        font-size: 23px;
+        padding: 8px 10px;
+    }
+}
+@media(max-width:400px) {
+    .logo h1 {
+        font-size: 26px;
+        padding-top: 20px;
+    }
+    .faz {
+        font-size: 30px;
+    }
+    .title {
+        font-size: 27px;
+    }
+    .container .card {
+        width: 330px;
+        height: 430px;
+        margin: 15px;
+        padding: 60px 30px;
+    }
+    .container .card .content .imgBx {
+        width: 125px;
+        height: 125px;
+    }
+    .container .card .content .contentBx {
+        margin: 20px 0;
+    }
+    .container .card .content .contentBx h4 {
+          font-size: 28px;
+          stroke: 1px #a61515;
+    }
+    .container .card .content .contentBx h5 {
+        font-size: 20px;
+        color: rgb(62, 62, 62);
+    }
+    .container .card .sci a {
+        font-size: 23px;
+        padding: 8px 10px;
+    }
+}
+@media(max-width:350px) {
+    .logo h1 {
+        font-size: 23px;
+        padding-top: 20px;
+    }
+    .faz {
+        font-size: 25px;
+    }
+    .title {
+        font-size: 21px;
+    }
+    .container .card {
+        width: 280px;
+        height: 410px;
+        margin: 15px;
+        padding: 60px 30px;
+    }
+    .container .card .content .imgBx {
+        width: 115px;
+        height: 115px;
+    }
+    .container .card .content .contentBx {
+        margin: 20px 0;
+    }
+    .container .card .content .contentBx h4 {
+          font-size: 26px;
+          stroke: 1px #a61515;
+    }
+    .container .card .content .contentBx h5 {
+        font-size: 18px;
+        color: rgb(62, 62, 62);
+    }
+    .container .card .sci a {
+        font-size: 23px;
+        padding: 8px 10px;
+    }
+}
+@media(max-width:290px) {
+    .logo h1 {
+        font-size: 15px;
+        padding-top: 30px;
+    }
+    .faz {
+        font-size: 23px;
+    }
+    .title {
+        font-size: 19px;
+    }
+    .container .card {
+        width: 240px;
+        height: 380px;
+        margin: 15px;
+        padding: 60px 30px;
+    }
+    .container .card .content .imgBx {
+        width: 95px;
+        height: 95px;
+    }
+    .container .card .content .contentBx {
+        margin: 10px 0;
+    }
+    .container .card .content .contentBx h4 {
+          font-size: 21px;
+          stroke: 1px #a61515;
+    }
+    .container .card .content .contentBx h5 {
+        font-size: 15px;
+        color: rgb(62, 62, 62);
+        margin-bottom: 20px;
+    }
+    .container .card .sci a {
+        font-size: 15px;
+        padding: 6px ;
+    }
+}
