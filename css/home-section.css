@@ -17,7 +17,7 @@
         
         }
         .image-container img {
-            width: 1000px;
+            width: 850px;
         }
          .text-container {
             padding-top: 150px;
@@ -25,9 +25,10 @@
             position: absolute;
             user-select: none;
         } 
+        /* new edit */
         .supported {
             padding-left: 5px;
-            font-size: 65px;
+            font-size: 40px;
             text-transform: uppercase;
             color: white;
             font-family: 'Anton', sans-serif;
@@ -39,9 +40,10 @@
         padding-top: 50px;
         padding-left: 20px;
       }
+              /* new edit */
       .detial span {
         color: white;
-        font-size: 34px;
+        font-size: 24px; 
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: 700;
         
