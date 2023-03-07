@@ -466,7 +466,7 @@
 }
 @media(max-width:450px) {
   #particles-js {
-    height: 730px;
+    height: 720px;
    }
   .image-container {
     margin-top: 80px;
@@ -502,7 +502,7 @@
 }
 @media(max-width:400px) {
   #particles-js {
-    height: 600px;
+    height: 650px;
    }
   .image-container {
     margin-top: 80px;
