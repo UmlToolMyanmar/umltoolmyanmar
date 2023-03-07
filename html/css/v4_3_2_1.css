@@ -1,114 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bellota+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- 
-}
-body {
-    background:#f2f3f7 ;
-}
-
-.nav-bar {
-    width: 100%;
-    height: 90px;
-    /* background-color: rgb(0, 0, 0); */
-    background:#0b0b0b ;
-    border-bottom: 1px rgba(235, 8, 8, 0.493) solid;
-}
-.logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.logo h1 {
-    color: rgb(249, 212, 4);
-    text-transform: uppercase;
-    font-family: 'Anton', sans-serif;
-    font-size: 45px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 4px;
-    padding-left: 10px;
-    font-weight: 800;
-}
-/* .logo img {
-    width: 100px;
-    height: 0px;
-} */
-/* .logo img {
-    width: 300px;
-    height: 80px;
-   
-} */
-.nav-container {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    padding-top: 10px;
-}
-.open-close-bar {
-    color: white;
-    font-size: 38px;
-    cursor: pointer;
-}
-.menu-item {
-    display: inline-flex;
-
-}
-.fas {
-    padding-right:10px;
-}
-.menu-item  li {
-    list-style: none;
-    margin: 0 10px;
-    padding: 10px;
-}
-.menu-item li:hover {
-    /* background: red; */
-    border-bottom: 1px white solid;
-    transition: all ease 0.3s;
-}
-.menu-item li a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    padding: 15px 15px;
-
-}
-.open {
-    position: absolute;
-    right: 30px;
-    top: 25px;
-    visibility: hidden;
-}
-.close {
-    position: absolute;
-    right: 30px;
-    top: 25px;
-    visibility: hidden;
-}
-.nav-container.active .open {
-    visibility: hidden;
-}
-.nav-container.active .close {
-    visibility: visible;
 }
 
 .version {
-    margin-top: 20px;
+    padding-top: 100px;
 }
 
 .title {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#0b0b0b;
+    color:#100f0f;
     text-align:center;
-    font-size : 40px;
+    font-size : 20px;
     font-weight :700;
     text-transform:uppercase;
     position:relative;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     user-select: none;
 }
  .title::after {
@@ -135,31 +46,37 @@ body {
     justify-content: center;
     gap: 50px;
 }
+ .box-container .box .main-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+ }
+ .box-container .box .main-photo img {
+    padding: 0px 30px;
+ }
 .box-container .box .photo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1000px;
-    height: 650px;
-    background: #f2f3f7;
-    box-shadow:0.6em 0.6em 1.2em #c3ccd8,
-                -0.5em -0.5em 1em #ffffff;
-   border-radius: 20px;
+    width: 500px;
+    height: 320px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .box-container .box .photo img {
-    width: 950px;
-    height: 600px;
+    padding: 0px 30px;
+    width: auto;
+    height: auto;
 }
 .box-container .box .detial {
-    width: 650px;
-    height: 650px;
+    width: 450px;
+    height: 450px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    background: #f2f3f7;
-    box-shadow:0.6em 0.6em 1.2em #c3ccd8,
-                -0.5em -0.5em 1em #ffffff;
-   border-radius: 20px;
+    gap: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
  
 }
 .box-container .info {
@@ -168,871 +85,769 @@ body {
     justify-content: center;
     width: 100%;
     height: 50px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 .box-container .info h4 {
-    font-size: 35px;
+    padding-top: 10px;
+    font-size: 18px;
     color: rgb(0, 0, 0);
-    text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .box-container .box .detial h3 {
-   font-size: 25px;
-   padding-left: 50px;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 15px;
+   font-weight: 800px;
+   padding-left: 20px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box-container .box .about h3 {
+    margin: 1px;
+    padding: 5px;
+    color: white;
+    background: #302f2feb;
+    font-size: 12px;
+}
+.box-container .box .about ul {
+    background-color: rgba(170, 149, 9, 0.906);
+    padding: 10px;
+    color: white;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 180px 180px ;
+}
+.box-container .box .about ul li {
+    font-size: 12px;
 }
 .box-container .box .detial .download {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+    gap: 10px;
+    margin: 20px 0;
 }
 .box-container .box .detial .download a {
     text-decoration: none;
     color: black;
-    font-size: 21px;
-    border-radius: 5px;
-    padding: 12px 8px;
+    font-size: 12px;
+    padding: 5px 8px;
     border-radius: 10px;
-    background-color: rgb(252, 240, 8);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .box-container .box .detial .download a:hover {
-    background-color: orange;
+    background-color: rgb(255, 221, 0);
 }
-@media(max-width:1680px){
- 
-    .menu-item {
-        position: fixed;
-        overflow: hidden ;
-        top: 80px;
-        width: 100%;
-        height: 0px;
-        display: block;
-        background-color: rgb(50, 49, 49);
+.photo-box-continer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+@media(max-width:1200px) {
+    .title {  
+        font-size : 20px; 
+        margin-bottom: 40px;
     }
-    .menu-item li {
-        margin-top: 10px;
-     
-    }
-    .menu-item li a {
-        color: rgb(255, 255, 255);
-        font-size: 25px;
-        padding: 20px 15px;
-    }
-    .menu-item li a:hover {
-        color: yellow;
-        border-bottom: 1px yellow solid;
-    }
-    .open {
-        visibility: visible;
-       }
-    .nav-container.active .menu-item{
-        height: 420px;
-        transition: all ease 0.5s;
-    }
-
-    .menu-item li:hover {
-        border-bottom: none;
-    }
-    .title {
-        font-size: 38px;
-    }
-    .box-container .box .photo {
-        width: 900px;
-        height: 650px;
-    }
-    .box-container .box .photo img {
-        width: 850px;
-        height: 550px;
-    }
-    .box-container .box .detial {
-        width: 600px;
-        height: 650px;
+    .box-container {
+        display: flex;
         gap: 50px;
-       
     }
-    .box-container .info {
-        width: 100%;
-        height: 50px;
-
-    }
-    .box-container .info h4 {
-        font-size: 33px;
-    }
-    .box-container .box .detial h3 {
-       font-size: 23px;
-       padding-left: 30px;
-    }
-    .box-container .box .detial .download {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-    .box-container .box .detial .download a {
-        font-size: 19px;
-        padding: 12px 8px;
-    }
-
-}
-@media(max-width:1500px){
-    .menu-item li a {
-        font-size: 18px;
-    }
-    .title {
-        font-size: 36px;
-    }
-    .box-container .box .photo {
-        width: 800px;
-        height: 600px;
-    }
-    .box-container .box .photo img {
-        width: 730px;
-        height: 480px;
-    }
-    .box-container .box .detial {
-        width: 550px;
-        height: 600px;
-        gap: 43px;
-       
-    }
-    .box-container .info {
-        width: 100%;
-        height: 46px;
-
-    }
-    .box-container .info h4 {
-        font-size: 30px;
-    }
-    .box-container .box .detial h3 {
-       font-size: 21px;
-       padding-left: 30px;
-    }
-    .box-container .box .detial .download {
-        display: flex;
-        flex-direction: row;
-        gap: 9px;
-    }
-    .box-container .box .detial .download a {
-        font-size: 19px;
-        padding: 10px 8px;
-    }
-}
-@media(max-width:1400px){
-   
-       .nav-container.active .menu-item{
-        height: 420px;
-        transition: all ease 0.5s;
-    }
-
-    .menu-item li:hover {
-        border-bottom: none;
-    }
-    .title {
-        font-size: 35px;
-    }
-    .box-container .box {
-        gap: 20px;
-    }
-    .box-container .box .photo {
-        width: 730px;
-        height: 570px;
-    }
-    .box-container .box .photo img {
-        width: 660px;
-        height: 440px;
-    }
-    .box-container .box .detial {
+     .box-container .box .main-photo {
         width: 500px;
-        height: 560px;
-        gap: 43px;
-       
-    }
-    .box-container .info {
-        width: 100%;
-        height: 43px;
-
-    }
-    .box-container .info h4 {
-        font-size: 27px;
-        padding-top: 10px;
-    }
-    .box-container .box .detial h3 {
-       font-size: 20px;
-       padding-left: 30px;
-    }
-    .box-container .box .detial .download {
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
-    }
-    .box-container .box .detial .download a {
-        font-size: 16px;
-        padding: 10px 5px;
-    }
-
-}
-@media(max-width:1300px){
-   
-    .nav-container.active .menu-item{
-     height: 410px;
- }
-
- .title {
-     font-size: 32px;
- }
- .box-container .box {
-     gap: 18px;
- }
- .box-container .box .photo {
-     width: 680px;
-     height: 520px;
- }
- .box-container .box .photo img {
-     width: 600px;
-     height: 400px;
- }
- .box-container .box .detial {
-     width: 450px;
-     height: 520px;
-     gap: 40px;
-    
- }
- .box-container .info {
-     width: 100%;
-     height: 40px;
-
- }
- .box-container .info h4 {
-     font-size: 25px;
-     padding-top: 5px;
- }
- .box-container .box .detial h3 {
-    font-size: 16px;
-    padding-left: 30px;
- }
- .box-container .box .detial .download {
-     display: flex;
-     flex-direction: row;
-     gap: 5px;
- }
- .box-container .box .detial .download a {
-     font-size: 16px;
-     padding: 10px 5px;
- }
-
-}
-@media(max-width:1100px){
-       .nav-container.active .menu-item{
-        height: 420px;
-        transition: all ease 0.5s;
-    }
-
-    .menu-item li:hover {
-        border-bottom: none;
-    }
-    .title {
-        font-size: 35px;
-    }
-    .box-container .box {
-        gap: 20px;
-        flex-direction: column;
-    }
-    .box-container .box .photo {
-        width: 730px;
-        height: 560px;
-    }
-    .box-container .box .photo img {
-        width: 660px;
-        height: 420px;
-    }
-    .box-container .box .detial {
-        width: 730px;
-        height: 630px;
-        gap: 53px;
-       
-    }
-    .box-container .info {
-        width: 100%;
-        height: 45px;
-
-    }
-    .box-container .info h4 {
-        font-size: 29px;
-        padding-top: 10px;
-    }
-    .box-container .box .detial h3 {
-       font-size: 23px;
-       padding-left: 30px;
-
-      
-    }
-    .box-container .box .detial .download {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    }
-    .box-container .box .detial .download a {
-        font-size: 19px;
-        padding: 15px 10px;
-    }
-}
-@media(max-width:1000px){
-   
-    .logo h1 {
-        font-size: 40px;
-        padding-top: 10px;
-    } 
-    .menu-item li a {
-        text-decoration: none;
-        color: white;
-        font-size: 19px;
-        padding: 15px 15px;   
-    }
-    .title {
-        font-size: 35px;
-    }
-    .box-container .box {
-        gap: 20px;
-        flex-direction: column;
-    }
-    .box-container .box .photo {
-        width: 700px;
-        height: 500px;
-    }
-    .box-container .box .photo img {
-        width: 620px;
-        height: 380px;
-    }
-    .box-container .box .detial {
-        width: 690px;
-        height: 520px;
-        gap: 35px;
-       
-    }
-    .box-container .info {
-        width: 100%;
-        height: 50px;
-
-    }
-    .box-container .info h4 {
-        font-size: 29px;
-        padding-top: 5px;
-    }
-    .box-container .box .detial h3 {
-       font-size: 22px;
-       padding-left: 30px;
-
-      
-    }
-    .box-container .box .detial .download {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    }
-    .box-container .box .detial .download a {
-        font-size: 16px;
-        padding: 14px 10px;
-    }
-
-}
-@media(max-width:750px){
-   
-    .logo h1 {
-        font-size: 40px;
-        padding-top: 10px;
-    } 
-    .menu-item li a {
-        text-decoration: none;
-        color: white;
-        font-size: 19px;
-        padding: 15px 15px;   
-    }
-    .title {
-        font-size: 32px;
-    }
-    .box-container .box {
-        gap: 20px;
-        flex-direction: column;
-    }
-    .box-container .box .photo {
-        width: 650px;
-        height: 450px;
-    }
-    .box-container .box .photo img {
-        width: 580px;
-        height: 340px;
-    }
-    .box-container .box .detial {
-        width: 650px;
-        height: 520px;
-        gap: 35px;
-       
-    }
-    .box-container .info {
-        width: 100%;
-        height: 50px;
-
-    }
-    .box-container .info h4 {
-        font-size: 27px;
-        padding-top: 8px;
-    }
-    .box-container .box .detial h3 {
-       font-size: 20px;
-       padding-left: 30px;
-
-      
-    }
-    .box-container .box .detial .download {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    }
-    .box-container .box .detial .download a {
-        font-size: 16px;
-        padding: 14px 10px;
-    }
-
-}
-@media(max-width:650px){
-   
-    .logo h1 {
-        font-size: 40px;
-        padding-top: 10px;
-    } 
-    .menu-item li a {
-        font-size: 19px;
-        padding: 15px 15px;   
-    }
-    .title {
-        font-size: 32px;
-    }
-    .box-container .box {
-        gap: 20px;
-        flex-direction: column;
-    }
-    .box-container .box .photo {
-        width: 580px;
-        height: 420px;
-    }
-    .box-container .box .photo img {
-        width: 520px;
-        height: 310px;
-    }
-    .box-container .box .detial {
-        width: 580px;
-        height: 470px;
-        gap: 30px;
-       
-    }
-    .box-container .info {
-        width: 100%;
-        height: 50px;
-
-    }
-    .box-container .info h4 {
-        font-size: 27px;
-        padding-top: 8px;
-    }
-    .box-container .box .detial h3 {
-       font-size: 20px;
-       padding-left: 30px;
-
-      
-    }
-    .box-container .box .detial .download {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    }
-    .box-container .box .detial .download a {
-        font-size: 16px;
-        padding: 14px 10px;
-    }
-
-}
-@media(max-width:600px){
-    .nav-container.active .menu-item{
-        height: 380px;
-    }
-    .logo h1 {
-        font-size: 40px;
-        padding-top: 10px;
-    }
-    .menu-item li a {
-        text-decoration: none;
-        color: white;
-        font-size: 19px;
-        padding: 15px 15px;  
-    }
-    .title {
-        font-size: 30px;
-    }
-    .box-container .box {
-        gap: 15px;
-    }
-    .box-container .box .photo {
-        width: 520px;
-        height: 400px;
-    }
-    .box-container .box .photo img {
-        width: 480px;
-        height: 300px;
-    }
-    .box-container .box .detial {
-        width: 520px;
-        height: 420px;
-        gap: 25px;
-       
-    }
-    .box-container .info {
-        width: 100%;
-        height: 50px;
-
-    }
-    .box-container .info h4 {
-        font-size: 25px;
-        padding-top: 10px;
-    }
-    .box-container .box .detial h3 {
-       font-size: 18px;
-       padding-left: 30px;
-
-      
-    }
-    .box-container .box .detial .download {
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-    
-    }
-    .box-container .box .detial .download a {
-        font-size: 14px;
-        padding: 14px 8px; 
-    }
-}
-@media(max-width:550px){
-    .box-container .box .photo {
-        width: 480px;
-        height: 370px;
-    }
-    .box-container .box .photo img {
-        width: 410px;
-        height: 270px;
-    }
-    .box-container .box .detial {
-        width: 480px;
-        height: 420px;
-        gap: 25px;
-       
-    }
-    .box-container .info {
-        width: 100%;
-        height: 48px;
-
-    }
-    .box-container .info h4 {
-        font-size: 22px;
-        padding-top: 10px;
-    }
-    .box-container .box .detial h3 {
-       font-size: 17px;
-       padding-left: 30px;
-
-      
-    }
-    .box-container .box .detial .download {
-        display: flex;
-        flex-direction: row;
-        gap: 12px;
-    
-    }
-    .box-container .box .detial .download a {
-        font-size: 14px;
-        padding: 14px 5px; 
-    }
-}
-@media(max-width:500px){
-    .nav-container.active .menu-item{
-        height: 340px;
-    }
-    .logo h1 {
-        font-size: 33px;
-        padding-top: 10px;
-    }
-    .title {
-        font-size: 25px;
-    }
-    .menu-item li a {
-        text-decoration: none;
-        color: white;
-        font-size: 17px;
-        padding: 15px 15px;  
-    }
-    
-    .open-close-bar {
-        font-size: 30px;
-    }
+        height: 350px;
+     }
+     .box-container .box .main-photo img {
+        padding: 0px 30px;
+     }
     .box-container .box .photo {
         width: 430px;
-        height: 330px;
+        height: 300px;
     }
     .box-container .box .photo img {
+        padding: 0px 20px;
+    }
+    .box-container .box .detial {
+        width: 400px;
+        height: 400px;
+    }
+    .box-container .info {
+        height: 50px;
+    }
+    .box-container .info h4 {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 13px;
+       padding-left: 30px;
+    }
+    .box-container .box .about h3 {
+        font-size: 10px;
+    }
+    .box-container .box .about ul {
+        grid-template-columns: 180px 180px ;
+    }
+    .box-container .box .about ul li {
+        font-size: 10px;
+    }
+    .box-container .box .detial .download {
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .box-container .box .detial .download a {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    .photo-box-continer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+@media(max-width:1000px) {
+    .title {  
+        font-size : 18px; 
+        margin-bottom: 40px;
+    }
+    .box-container {
+        display: flex;
+        gap: 10px;
+    }
+     .box-container .box .main-photo {
+        width: 450px;
+        height: 300px;
+     }
+     .box-container .box .main-photo img {
+        padding: 0px 30px;
+     }
+    .box-container .box .photo {
+        width: 400px;
+        height: 270px;
+    }
+    .box-container .box .photo img {
+        padding: 0px 20px;
+    }
+    .box-container .box .detial {
+        width: 370px;
+        height: 400px;
+    }
+    .box-container .info {
+        height: 40px;
+    }
+    .box-container .info h4 {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 13px;
+       padding-left: 20px;
+    }
+    .box-container .box .about h3 {
+        font-size: 10px;
+    }
+    .box-container .box .about ul {
+        grid-template-columns: 180px 180px ;
+    }
+    .box-container .box .about ul li {
+        font-size: 10px;
+    }
+    .box-container .box .detial .download {
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .box-container .box .detial .download a {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    .photo-box-continer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+@media(max-width:900px) {
+    .title {  
+        font-size : 18px; 
+        margin-bottom: 40px;
+    }
+    .box-container {
+        display: grid;
+        gap: 0px;
+    }
+    .box-container .main-box {
+        display: grid;
+    }
+     .box-container .box .main-photo {
+        width: 550px;
+        height: 350px;
+     }
+     .box-container .box .main-photo img {
+        padding: 0px 30px;
+     }
+    .box-container .box .photo {
         width: 380px;
         height: 250px;
     }
+    .box-container .box .photo img {
+        padding: 0px 20px;
+    }
     .box-container .box .detial {
-        width: 420px;
-        height: 460px;
-        gap: 22px;
-       
+        width: 550px;
+        height: 400px;
     }
     .box-container .info {
-        width: 100%;
-        height: 43px;
-
+        height: 40px;
     }
     .box-container .info h4 {
-        font-size: 20px;
         padding-top: 10px;
+        font-size: 15px;
     }
     .box-container .box .detial h3 {
-       font-size: 14px;
-       padding-left: 10px;   
+       font-size: 13px;
+       padding-left: 20px;
+    }
+    .box-container .box .about h3 {
+        font-size: 10px;
+    }
+    .box-container .box .about ul {
+        grid-template-columns: 180px 180px ;
+    }
+    .box-container .box .about ul li {
+        font-size: 10px;
     }
     .box-container .box .detial .download {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    
+        gap: 10px;
+        margin: 10px 0;
     }
     .box-container .box .detial .download a {
-        font-size: 13px;
-        padding: 14px 5px; 
-        width: 150px;
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    .photo-box-continer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
     }
 }
-@media(max-width:450px){
-    .nav-container.active .menu-item{
-        height: 340px;
-    }
-    .logo h1 {
-        font-size: 31px;
-        padding-top: 10px;
-    }
+@media(max-width:800px) {
    
-    .menu-item li a {
-        font-size: 13px;
-        padding: 13px ;
-    
+    .photo-box-continer {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 30px;
     }
-    .open-close-bar {
-        font-size: 29px;
+}
+@media(max-width:700px) {
+   
+    .photo-box-continer {
+        gap: 20px;
     }
+    .box-container .box .main-photo {
+        width: 500px;
+        height: 300px;
+     }
+     .box-container .box .main-photo img {
+        padding: 0px 30px;
+     }
     .box-container .box .photo {
         width: 380px;
-        height: 280px;
+        height: 250px;
     }
     .box-container .box .photo img {
-        width: 340px;
-        height: 220px;
+        padding: 0px 20px;
     }
     .box-container .box .detial {
-        width: 380px;
-        height: 430px;
-        gap: 22px;
-       
+        width: 500px;
+        height: 400px;
     }
     .box-container .info {
-        width: 100%;
         height: 40px;
-
     }
     .box-container .info h4 {
-        font-size: 18px;
         padding-top: 10px;
+        font-size: 13px;
     }
     .box-container .box .detial h3 {
        font-size: 12px;
-       padding-left: 10px;   
+       padding-left: 20px;
+    }
+    .box-container .box .about h3 {
+        font-size: 10px;
+    }
+    .box-container .box .about ul {
+        grid-template-columns: 180px 180px ;
+    }
+    .box-container .box .about ul li {
+        font-size: 10px;
     }
     .box-container .box .detial .download {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    
-    }
-    .box-container .box .detial .download a {
-        font-size: 11px;
-        padding: 14px 5px; 
-        width: 150px;
-    }
-}
-@media(max-width:400px){
-   
-    .logo h1 {
-        font-size: 27px;
-        padding-top: 10px;
-    }
-   
-    .menu-item li a {
-        font-size: 13px;
-        padding: 13px ;
-    
-    }
-    .open-close-bar {
-        font-size: 29px;
-    }
-    .box-container .box .photo {
-        width: 350px;
-        height: 245px;
-    }
-    .box-container .box .photo img {
-        width: 300px;
-        height: 180px;
-    }
-    .box-container .box .detial {
-        width: 350px;
-        height: 380px;
-        gap: 13px;
-       
-    }
-    .box-container .info {
-        width: 100%;
-        height: 35px;
-
-    }
-    .box-container .info h4 {
-        font-size: 15px;
-        padding-top: 10px;
-    }
-    .box-container .box .detial h3 {
-       font-size: 11px;
-       padding-left: 10px;   
-    }
-    .box-container .box .detial .download {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    
-    }
-    .box-container .box .detial .download a {
-        font-size: 11px;
-        padding: 12px 5px; 
-        width: 120px;
-    }
-   
-}
-@media(max-width:350px){
-   .title::after {
-    width: 30%;
-   }
-    .logo h1 {
-        font-size: 20px;
-        padding-top: 15px;
-        letter-spacing: 2px;
-    }
-   
-    .menu-item li a {
-        font-size: 12px;
-        padding: 13px ; 
-    }
-    .box-container .box .photo {
-        width: 300px;
-        height: 225px;
-    }
-    .box-container .box .photo img {
-        width: 260px;
-        height: 160px;
-    }
-    .box-container .box .detial {
-        width: 295px;
-        height: 320px;
         gap: 10px;
-       
-    }
-    .box-container .info {
-        width: 100%;
-        height: 35px;
-
-    }
-    .box-container .info h4 {
-        font-size: 15px;
-        padding-top: 10px;
-    }
-    .box-container .box .detial h3 {
-       font-size: 11px;
-       padding-left: 10px;   
-    }
-    .box-container .box .detial .download {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    
+        margin: 10px 0;
     }
     .box-container .box .detial .download a {
-        font-size: 9px;
-        padding: 10px 5px; 
-        width: 100px;
+        font-size: 11px;
+        padding: 5px 8px;
     }
-   
+    .photo-box-continer {
+        margin-top: 60px;
+        gap: 30px;
+    }
 }
-@media(max-width:290px){
+@media(max-width:600px) {
    
-    .logo h1 {
-        font-size: 19px;
-        padding-top: 15px;
-        letter-spacing: 2px;
+    .photo-box-continer {
+        gap: 20px;
     }
-   
-    .menu-item li a {
-        font-size: 12px;
-        padding: 13px ;
-    
-    }
-    .title {
-        font-size: 18px;
-    }
+    .box-container .box .main-photo {
+        width: 430px;
+        height: 270px;
+     }
+     .box-container .box .main-photo img {
+        padding: 0px 30px;
+     }
     .box-container .box .photo {
-        width: 260px;
+        width: 350px;
+        height: 230px;
+    }
+    .box-container .box .photo img {
+        padding: 0px 20px;
+    }
+    .box-container .box .detial {
+        width: 430px;
+        height: 400px;
+    }
+    .box-container .info {
+        height: 40px;
+    }
+    .box-container .info h4 {
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 12px;
+       padding-left: 20px;
+    }
+    .box-container .box .about h3 {
+        font-size: 10px;
+    }
+    .box-container .box .about ul {
+        grid-template-columns: 180px 180px ;
+    }
+    .box-container .box .about ul li {
+        font-size: 10px;
+    }
+    .box-container .box .detial .download {
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .box-container .box .detial .download a {
+        font-size: 11px;
+        padding: 5px 6px;
+    }
+    .photo-box-continer {
+        margin-top: 60px;
+        gap: 30px;
+    }
+}
+@media(max-width:500px) {
+    .title {  
+        font-size : 15px; 
+    }
+    .photo-box-continer {
+        gap: 20px;
+    }
+    .box-container .box .main-photo {
+        width: 380px;
+        height: 240px;
+     }
+     .box-container .box .main-photo img {
+        padding: 0px 30px;
+     }
+    .box-container .box .photo {
+        width: 320px;
         height: 200px;
     }
     .box-container .box .photo img {
-        width: 220px;
-        height: 140px;
+        padding: 0px 20px;
     }
     .box-container .box .detial {
-        width: 250px;
-        height: 260px;
-        gap: 5px;
-       
+        width: 380px;
+        height: 350px;
     }
     .box-container .info {
-        width: 100%;
         height: 30px;
-
     }
     .box-container .info h4 {
+        padding-top: 5px;
         font-size: 12px;
-        padding-top: 10px;
     }
     .box-container .box .detial h3 {
-       font-size: 9px;
-       padding-left: 10px;   
+       font-size: 11px;
+       padding-left: 20px;
+    }
+    .box-container .box .about h3 {
+        font-size: 9px;
+    }
+    .box-container .box .about ul {
+        grid-template-columns: 180px 180px ;
+    }
+    .box-container .box .about ul li {
+        font-size: 9px;
     }
     .box-container .box .detial .download {
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-    
+        gap: 10px;
+        margin: 10px 0;
     }
     .box-container .box .detial .download a {
         font-size: 9px;
-        padding: 10px 5px; 
-        width: 90px;
+        padding: 5px 6px;
     }
-   
+    .photo-box-continer {
+        margin-top: 60px;
+        gap: 30px;
+    }
+}
+@media(max-width:450px) {
+    .title {  
+        font-size : 15px; 
+    }
+    .photo-box-continer {
+        gap: 20px;
+    }
+    .box-container .box .main-photo {
+        width: 350px;
+        height: 210px;
+     }
+     .box-container .box .main-photo img {
+        padding: 0px 30px;
+     }
+    .box-container .box .photo {
+        width: 310px;
+        height: 200px;
+    }
+    .box-container .box .photo img {
+        padding: 0px 20px;
+    }
+    .box-container .box .detial {
+        width: 350px;
+        height: 350px;
+    }
+    .box-container .info {
+        height: 30px;
+    }
+    .box-container .info h4 {
+        padding-top: 5px;
+        font-size: 12px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 11px;
+       padding-left: 20px;
+    }
+    .box-container .box .about h3 {
+        font-size: 9px;
+    }
+    .box-container .box .about ul {
+        grid-template-columns: 180px 180px ;
+    }
+    .box-container .box .about ul li {
+        font-size: 9px;
+    }
+    .box-container .box .detial .download {
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .box-container .box .detial .download a {
+        font-size: 9px;
+        padding: 5px 6px;
+    }
+    .photo-box-continer {
+        margin-top: 60px;
+        gap: 30px;
+    }
+}
+@media(max-width:400px) {
+    .title {  
+        font-size : 14px; 
+    }
+    .photo-box-continer {
+        gap: 20px;
+    }
+    .box-container .box .main-photo {
+        width: 320px;
+        height: 190px;
+     }
+     .box-container .box .main-photo img {
+        padding: 0px 30px;
+     }
+    .box-container .box .photo {
+        width: 270px;
+        height: 180px;
+    }
+    .box-container .box .photo img {
+        padding: 0px 20px;
+    }
+    .box-container .box .detial {
+        width: 310px;
+        height: 340px;
+    }
+    .box-container .info {
+        height: 25px;
+    }
+    .box-container .info h4 {
+        padding-top: 5px;
+        font-size: 11px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 10px;
+       padding-left: 20px;
+    }
+    .box-container .box .about h3 {
+        font-size: 9px;
+    }
+    .box-container .box .about ul {
+        grid-template-columns: 180px 180px ;
+    }
+    .box-container .box .about ul li {
+        font-size: 8.5px;
+    }
+    .box-container .box .detial .download {
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .box-container .box .detial .download a {
+        font-size: 9px;
+        padding: 5px 6px;
+    }
+    .photo-box-continer {
+        margin-top: 60px;
+        gap: 30px;
+    }
+}
+@media(max-width:350px) {
+    .title {  
+        font-size : 13px; 
+    }
+    .photo-box-continer {
+        gap: 20px;
+    }
+    .box-container .box .main-photo {
+        width: 290px;
+        height: 180px;
+     }
+     .box-container .box .main-photo img {
+        padding: 0px 20px;
+     }
+    .box-container .box .photo {
+        width: 250px;
+        height: 160px;
+    }
+    .box-container .box .photo img {
+        padding: 0px 20px;
+    }
+    .box-container .box .detial {
+        width: 290px;
+        height: 320px;
+    }
+    .box-container .info {
+        height: 20px;
+    }
+    .box-container .info h4 {
+        padding-top: 2px;
+        font-size: 10px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 9px;
+       padding-left: 10px;
+    }
+    .box-container .box .about h3 {
+        font-size: 9px;
+    }
+    .box-container .box .about ul {
+        grid-template-columns: 160px 160px ;
+    }
+    .box-container .box .about ul li {
+        font-size: 8px;
+    }
+    .box-container .box .detial .download {
+        gap: 10px;
+        margin: 10px 0;
+    }
+    .box-container .box .detial .download a {
+        font-size: 9px;
+        padding: 5px 6px;
+    }
+    .photo-box-continer {
+        margin-top: 60px;
+        gap: 30px;
+    }
+}
+@media(max-width:300px) {
+    .title {  
+        font-size : 12px; 
+    }
+    .photo-box-continer {
+        gap: 20px;
+    }
+    .box-container .box .main-photo {
+        width: 260px;
+        height: 160px;
+     }
+     .box-container .box .main-photo img {
+        padding: 0px 20px;
+     }
+    .box-container .box .photo {
+        width: 220px;
+        height: 150px;
+    }
+    .box-container .box .photo img {
+        padding: 0px 20px;
+    }
+    .box-container .box .detial {
+        width: 240px;
+        height: 300px;
+    }
+    .box-container .info {
+        height: 20px;
+    }
+    .box-container .info h4 {
+        padding-top: 3px;
+        font-size: 9px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 8px;
+       padding-left: 10px;
+    }
+    .box-container .box .about h3 {
+        font-size: 8px;
+    }
+    .box-container .box .about ul {
+        grid-template-columns: 140px 140px ;
+    }
+    .box-container .box .about ul li {
+        font-size: 8px;
+    }
+    .box-container .box .detial .download {
+        gap: 5px;
+        margin: 5px 0;
+    }
+    .box-container .box .detial .download a {
+        font-size: 8px;
+        padding: 4px 6px;
+    }
+    .photo-box-continer {
+        margin-top: 60px;
+        gap: 30px;
+    }
+}
+@media(max-width:250px) {
+    .title {  
+        font-size : 11px; 
+    }
+    .photo-box-continer {
+        gap: 10px;
+    }
+    .box-container .box .main-photo {
+        width: 190px;
+        height: 120px;
+     }
+     .box-container .box .main-photo img {
+        padding: 0px 10px;
+     }
+    .box-container .box .photo {
+        width: 180px;
+        height: 120px;
+    }
+    .box-container .box .photo img {
+        padding: 0px 10px;
+    }
+    .box-container .box .detial {
+        width: 190px;
+        height: 330px;
+    }
+    .box-container .info {
+        height: 20px;
+    }
+    .box-container .info h4 {
+        padding-top: 4px;
+        font-size: 8px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 7px;
+       padding-left: 10px;
+    }
+    .box-container .box .about h3 {
+        font-size: 6px;
+    }
+    .box-container .box .about ul {
+        grid-template-columns: 110px  ;
+    }
+    .box-container .box .about ul li {
+        font-size: 7px;
+    }
+    .box-container .box .detial .download {
+        gap: 5px;
+        margin: 5px 0;
+    }
+    .box-container .box .detial .download a {
+        font-size: 5px;
+        padding: 2px 4px;
+    }
+    .photo-box-continer {
+        margin-top: 60px;
+        gap: 30px;
+    }
+}
+@media(max-width:200px) {
+    .title {  
+        font-size : 11px; 
+    }
+    .photo-box-continer {
+        gap: 10px;
+    }
+    .box-container .box .main-photo {
+        width: 170px;
+        height: 110px;
+     }
+     .box-container .box .main-photo img {
+        padding: 0px 10px;
+     }
+    .box-container .box .photo {
+        width: 160px;
+        height: 110px;
+    }
+    .box-container .box .photo img {
+        padding: 0px 10px;
+    }
+    .box-container .box .detial {
+        width: 170px;
+        height: 330px;
+    }
+    .box-container .info {
+        height: 20px;
+    }
+    .box-container .info h4 {
+        padding-top: 4px;
+        font-size: 8px;
+    }
+    .box-container .box .detial h3 {
+       font-size: 7px;
+       padding-left: 10px;
+    }
+    .box-container .box .about h3 {
+        font-size: 6px;
+    }
+    .box-container .box .about ul {
+        grid-template-columns: 110px  ;
+    }
+    .box-container .box .about ul li {
+        font-size: 7px;
+    }
+    .box-container .box .detial .download {
+        gap: 5px;
+        margin: 5px 0;
+    }
+    .box-container .box .detial .download a {
+        font-size: 5px;
+        padding: 2px 4px;
+    }
+    .photo-box-continer {
+        margin-top: 20px;
+        gap: 10px;
+    }
 }
