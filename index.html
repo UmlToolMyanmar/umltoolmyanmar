@@ -6,18 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UML Tool</title>
     <link rel="shortcut icon" href="image/icon.ico">
-
-    <!--for icon / fontawesome <i></i>-->
     <script src="https://kit.fontawesome.com/1c38d71225.js" crossorigin="anonymous"></script>
-
-      <!-- animate cdn -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <!--------  cdn js for particles.........------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!---All Section Css -->
     <link rel="stylesheet" href="css/nav-section.css">
     <link rel="stylesheet" href="css/home-section.css">
     <link rel="stylesheet" href="css/ads.css">
@@ -35,11 +27,10 @@
     <!--nav section.css-->
     <nav class="nav-bar">
         <div class="nav-container">
-            <div class="logo">   <!--Logo -->
-                  <!-- <img src="image/icon.jpg" alt="title">   -->
+            <div class="logo">   
                 <h1>UML Tool Myanmar</h1>
             </div>
-            <div class="open-close-bar"> <!--open close bar -->
+            <div class="open-close-bar"> 
                 <div class="open" id="open-bar">
                     <i class="fa-solid fa-bars"></i>
                 </div>
@@ -48,42 +39,40 @@
                 </div>
             </div>
             <ul class="menu-item">
-                <li><a href=""><i class="fas fa-solid fa-house-chimney"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-solid fa-house-chimney"></i> Home</a></li>
                 <li><a href="#download"><i class="fas fa-solid fa-cloud-arrow-down"></i> Download</a></li>
-                <li><a href="#driver"><i class="fa-brands fa-usb"></i> Drivers</a></li>
-                <li><a href="#supporting"><i class="fas fa-solid fa-circle-info"></i> Supporting</a></li>
-                <li><a href="html/reseller.html"><i class="fas fa-solid fa-people-group"></i> Reseller & Contact</a></li>
-                <li><a href="https://www.youtube.com/channel/UC0RAABOmoydNGSLA2_fCrsQ"></i><i class="fa-brands fa-youtube"></i> Tutorial</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100087222994892&mibextid=ZbWKwL"><i class="fas fa-solid fa-circle-question"></i> About</a></li>
+                <li><a href="#driver"><i class="fas fa-brands fa-usb"></i> Drivers</a></li>
+                <li id="supporting"><a href="html/supporting.html"><i class="fas fa-solid fa-circle-info"></i> Supporting</a></li>
+                <li id="reseller"><a href="html/reseller.html"><i class="fas fa-solid fa-people-group"></i> Reseller & Contact</a></li>
+                <li id="tutorial"><a href="https://www.youtube.com/channel/UC0RAABOmoydNGSLA2_fCrsQ"></i><i class="fas fa-brands fa-youtube"></i> Tutorial</a></li>
+                <li id="about"><a href="https://www.facebook.com/profile.php?id=100087222994892&mibextid=ZbWKwL"><i class="fas fa-solid fa-circle-question"></i> About</a></li>
             </ul>
         </div>
     </nav>
-   <!--home section.css-->
     <section class="home">
-        
         <div id="particles-js">
             <div class="image-container wow animate__backInRight"data-wow-duration="2s" data-wow-delay="0s">
-                <img name="slide" alt=""> <!--image looping-->
+                <img name="slide" alt=""> 
             </div>
-            <div class="text-container wow animate__backInLeft"data-wow-duration="3s" data-wow-delay="0s">
-                 <span class="supported"></span> <br>
-                 <div class="detial ">
+            <div class="text-container">
+                 <span class="supported wow animate__backInLeft" data-wow-duration="3s" data-wow-delay="0s"></span> <br>
+                 <div class="detial wow animate__backInLeft" data-wow-duration="2s" data-wow-delay="0s">
                     <span >
                         UML Service Tool is Offline Mobile Service Tool... <br>
                         Supported MTK / Qualcomm / SPD ..... <br>
                         CPU Type - EMMC / UFS Supported... <br>
                         Supported many phone.... <br>
-                        Userlock Remove / Frp Remove / Flashing / Repair ... <br>
+                        Userlock Remove / Frp Remove / Flashing / IMEI Repair ... <br>
+                        Qualcomm Auth Bypass & Flashing ... <br>
                         Bootloader Unlock / ID Remover ... <br>
-                        All in One Mobile Tool.....
+                        The Best All in One Mobile Tool.....
                      </span>  
-                 </div>
-               
-                 <div class="setup_driver">
+                 </div> 
+                 <div class="setup_driver wow animate__backInUp" data-wow-duration="3s" data-wow-delay="0s">
                     <a href="#download" ><i class="fa-solid fa-download"></i> Download Setup</a>
                     <a href="#driver" ><i class="fa-brands fa-usb"></i> Download Driver</a>    
                  </div>
-                 <div class="icon">
+                 <div class="icon wow animate__backInLeft" data-wow-duration="3.5s" data-wow-delay="0s">
                     <a><i class="fa-brands fa-android"></i></a>
                     <a class="apple"><i class="fa-brands fa-apple"></i></a>
                     <a class="apple"><i class="fa-solid fa-mobile-screen-button"></i></a>
@@ -123,80 +112,69 @@
     </script>
 
         </div>   
-    </section>
-    
-   
+    </section> 
     <!--  download-section.css--> 
     <section id="download">
-        <div class="download"> <!----control two container (One and Two)-->
-            <h2 class="title">Download</h2> <!--title-->
-            <div class="download-container"> <!--download container-->
-                 <div class="container_One"> <!---container one-->
-                    <div class="version wow animate__backInLeft"data-wow-duration="3s" data-wow-delay="0s"> <!-----version 5-->
-                        <div class="image_section"> <!----image section-->
-                            <img src="image/V5.1/1.png" alt="imb">
-                            <label class="img_text"> Lasted Version</label><!----image text-->
-                        </div>
-                        <div class="detial_text"> <!----detial text....-->
-                            <strong>UML Tool V5.01  </strong> <!-----strong-->
-                            <a href="html/v5.html" class="span"><i class="fa-solid fa-download"></i> Download</a> <!----span-->
-                           
-                            <a href="html/v5.html">Read More..</a> <!----a-->
-                        </div>
-                      
-                     </div> 
-                     <div class="version wow animate__backInRight"data-wow-duration="3s" data-wow-delay="0s">  <!-----version 4-->
-                        <div class="image_section"> <!----image section-->
-                            <img src="image/V4/1.jpg" alt="imb">
-                            <label class="img_text"><i class="fa-solid fa-crown"></i> New</label><!----image text-->
-                        </div>
-                        <div class="detial_text"> <!----detial text....-->
-                            <strong>UML Tool V4.0  </strong> <!-----strong-->
-                            <a href="html/v4.html" class="span"><i class="fa-solid fa-download"></i> Download</a> <!----span-->             
-                            <a href="html/v4.html">Read More..</a> <!----a-->
-                        </div>               
-                     </div>          
-                 </div>
+        <div class="download"> 
+            <h2 class="title">Download</h2> 
+            <div class="container"> 
+                <div class="version wow animate__backInLeft"data-wow-duration="3s" data-wow-delay="0s"> <!-----version 5-->
+                    <div class="image_section"> 
+                        <img src="image/V5.1/1.png" alt="imb">
+                        <label class="img_text"> Lasted Version</label>
+                    </div>
+                    <div class="detial_text"> 
+                        <strong>UML Tool V5.04  </strong> 
+                        <a href="html/v5.html" class="span"><i class="fa-solid fa-download"></i> Download</a> <!----span-->
+                       
+                        <a href="html/v5.html">Read More..</a> 
+                    </div>
+                  
+                 </div> 
+                 <div class="version wow animate__backInRight"data-wow-duration="3s" data-wow-delay="0s">  <!-----version 4-->
+                    <div class="image_section"> 
+                        <img src="image/V4/1.jpg" alt="imb">
+                        <label class="img_text"><i class="fa-solid fa-crown"></i> New</label><!----image text-->
+                    </div>
+                    <div class="detial_text"> 
+                        <strong>UML Tool V4.0  </strong> 
+                        <a href="html/v4.html" class="span"><i class="fa-solid fa-download"></i> Download</a> <!----span-->             
+                        <a href="html/v4.html">Read More..</a> 
+                    </div>               
+                 </div> 
+                 <div class="version wow animate__backInLeft"data-wow-duration="3s" data-wow-delay="0s"> <!----version 3-->   
+                    <div class="image_section">
+                        <img src="image/V3/1.png" alt="imb">
+                     <label class="img_text"><i class="fa-solid fa-crown"></i> New</label> 
+                    </div>
+                    <div class="detial_text"> 
+                        <strong>UML Tool V3.0 </strong> 
+                        <a href="html/v3.html" class="span"><i class="fa-solid fa-download"></i> Download</a> <!----span-->
+                       
+                        <a href="html/v3.html">Read More..</a> 
+                    </div>
+                 </div>    
+                 <div class="version wow animate__backInRight"data-wow-duration="3s" data-wow-delay="0s">
+                    <div class="image_section"> 
+                        <img src="image/V2/1.png" alt="imb">
+                        <label class="img_text"><i class="fa-solid fa-crown"></i> New</label>  <!-- image text -->
+                    </div>
+                    <div class="detial_text"> 
+                        <strong>UML Tool V2.0 </strong> 
+                        <a href="html/v2.html" class="span"><i class="fa-solid fa-download"></i> Download</a> <!----span-->
+                       
+                        <a href="html/v2.html">Read More..</a> 
+                    </div>
+                  </div>         
+             </div>
 
-
-                 <div class="container_Two">
-                    <div class="version wow animate__backInLeft"data-wow-duration="3s" data-wow-delay="0s"> <!----version 3-->   
-                        <div class="image_section"> <!----image section-->
-                            <img src="image/V3/1.png" alt="imb">
-                         <label class="img_text"><i class="fa-solid fa-crown"></i> New</label> 
-                        </div>
-                        <div class="detial_text"> <!----detial text....-->
-                            <strong>UML Tool V3.0 </strong> <!-----strong-->
-                            <a href="html/v3.html" class="span"><i class="fa-solid fa-download"></i> Download</a> <!----span-->
-                           
-                            <a href="html/v3.html">Read More..</a> <!----a-->
-                        </div>
-                     </div>    
-                     <!----version 2-->
-                     <div class="version wow animate__backInRight"data-wow-duration="3s" data-wow-delay="0s">
-                        <div class="image_section"> <!----image section-->
-                            <img src="image/V2/1.png" alt="imb">
-                            <label class="img_text"><i class="fa-solid fa-crown"></i> New</label>  <!-- image text -->
-                        </div>
-                        <div class="detial_text"> <!----detial text....-->
-                            <strong>UML Tool V2.0 </strong> <!-----strong-->
-                            <a href="html/v2.html" class="span"><i class="fa-solid fa-download"></i> Download</a> <!----span-->
-                           
-                            <a href="html/v2.html">Read More..</a> <!----a-->
-                        </div>
-                      </div>
-                 </div>
-            </div>
         </div>    
     </section>
-
-
     <!---    driver-section.css ----->
     <section id="driver" class="driver">
-        <h2 class="title"> Driver</h2> <!--title-->
+        <h2 class="title"> Driver</h2> 
          <div class="driver-info">
-            <!-- box-container 1 -->
-            <div class="box-container wow animate__backInDown"data-wow-duration="3s" data-wow-delay="0s">
+            <div class="box-container wow animate__backInRight"data-wow-duration="3s" data-wow-delay="0s">
                 <div class="box">
                     <div class="glass"></div>
                     <div class="content">
@@ -225,9 +203,6 @@
                         <a href="https://romadd.com/?go=6c91e7ea">Download</a>
                     </div>
                 </div>
-            </div>  
-            <!-- box-container 2 -->
-            <div class="box-container wow animate__backInRight"data-wow-duration="3s" data-wow-delay="0s">
                 <div class="box "  >
                     <div class="glass"></div>
                     <div class="content">
@@ -256,17 +231,16 @@
                         <a href="https://www.mediafire.com/file/2vson2nf3nz17ln/adb-fastboot-druver-setup-1.4.3.exe/file">Download</a>
                     </div>
                 </div>
-            </div>      
+            </div>  
          </div>
      </section>
-
     <!----- supporting-section.css------>
      <section id="supporting">
          <div class="supporting">
-            <h2 class="title">Supporting</h2> <!--title-->
+            <h2 class="title">Supporting</h2>
              <div class="supporting-container">
-                <div class="box"> <!----box-1-->
-                    <h6>Supported Brands</h6>
+                <div class="box wow animate__backInLeft" data-wow-duration="2s" data-wow-delay="0s"> 
+                    <h6> Brands</h6>
                     <div class="info">    
                          <li>Oppo</li>
                          <li>Vivo</li>
@@ -284,9 +258,8 @@
                          <li>Nokia</li>
                          <li>Wika</li>
                  </div>
-                </div>              
-               
-                <div class="box">
+                </div>                         
+                <div class="box wow animate__backInLeft" data-wow-duration="2s" data-wow-delay="0s"> 
                     <h6>Feature</h6>
                     <div class="info">   
                         <li>Factory Reset</li>
@@ -294,6 +267,7 @@
                         <li>Erase Frp</li>
                         <li>Mi Account Bypass </li>
                         <li>Mi Account Disable(adb)</li>
+                        <li>QualcommAuth Bypass </li>
                         <li>Bootloader Unlocker</li>
                         <li>Bootloader Relock</li>
                         <li>All Mtk Auth Bypass</li>
@@ -305,10 +279,10 @@
                         <li>Fastboot Flashing </li>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box wow animate__backInRight" data-wow-duration="2s" data-wow-delay="0s"> 
                     <h6>Repair</h6>
                     <div class="info">
-                        
+                        <li>IMEI Null Fix</li>
                         <li>Erase Nvram</li>
                         <li>Wifi Fix</li>
                         <li>Dm-Verify Error Fix</li>
@@ -316,33 +290,24 @@
                     </div>
                 </div>                    
          </div> 
-         <div class="show-more"> <a href="html/supporting.html">Show More</a> </div>      
+         <div class="show-more wow animate__backInRight" data-wow-duration="2s" data-wow-delay="0s"> <a href="html/supporting.html">Show More</a> </div>      
          </div>
      </section>
   
     <!-------- footer-section.css ------>
-    
    <footer>
-      <div class="footer">
+      <div class="footer  animate__backInLeft" data-wow-duration="2s" data-wow-delay="0s">
         <div class="footer-container">
-            <div class="footer-logo-container">   
+            <div class="footer-logo-container wow animate__backInLeft" data-wow-duration="2s" data-wow-delay="0s">   
                 <h2> Social Media</h2>                
                 <div class="footer-social">
+                    <a href="https://www.youtube.com/@umyolayumltool6377"><i class="fa fa-brands fa-youtube"></i></a>
                     <a href="https://www.facebook.com/UMYOLAY1998/"><i class="fa fa-brands fa-facebook"></i></a>
                     <a href="https://m.me/j/AbYp9Y61OPmgVJuf/"><i class="fa fa-brands fa-facebook-messenger"></i></a>
                     <a href="https://t.me/+zo9TQJywSnNiNTc1"><i class="fa fa-brands fa-telegram"></i></a>
                 </div>
             </div>
-             <div class="footer-menu">
-                <div class="footer-menu-box">
-                    <h2>About</h2>
-                    <ul>
-                        <li><a >UML Tool Myanmar is the Best Service Tool  </a></li>
-                        
-                    </ul>
-                </div>
-             </div>
-             <div class="footer-menu">
+             <div class="footer-menu wow animate__backInLeft" data-wow-duration="2.1s" data-wow-delay="0s">
                 <div class="footer-menu-box">
                     <h2> address</h2>
                     <ul>
@@ -355,7 +320,7 @@
                     </ul>
                 </div>
              </div>    
-             <div class="footer-menu">
+             <div class="footer-menu wow animate__backInRight" data-wow-duration="2.1s" data-wow-delay="0s">
                 <div class="footer-menu-box">
                     <h2>App</h2>
                     <ul>
@@ -365,7 +330,7 @@
                     </ul>
                   </div>
              </div>   
-             <div class="footer-menu">
+             <div class="footer-menu wow animate__backInRight" data-wow-duration="2s" data-wow-delay="0s">
                 <div class="footer-menu-box">
                     <h2> Contact Us</h2>
                     <ul>
@@ -384,17 +349,14 @@
 
      <!--    copyright-->
  <span class="copyright">
-    Copyright 2022 &copy; UML Tool Myanmar Powered By UML Team &trade;
+    <p class="wow animate__backInLeft" data-wow-duration="2s" data-wow-delay="0s"> Copyright 2023 &copy; UML Tool Myanmar Powered By UML Team &trade;</p>
  </span> 
 
     <script src="particles.js"></script>
     <script src="js/app.js"></script>
     <script src="js/open-close.js"></script>
     <script src="js/image-text-loop.js"></script>
-
-     <!-- wow cdn link -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-   
      <script type="text/javascript">
           new WOW().init();
     </script>  
