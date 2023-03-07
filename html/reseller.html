@@ -7,179 +7,313 @@
     <title>reseller_page</title>
     <link rel="shortcut icon" href="../image/icon.jpg">
     <link rel="stylesheet" href="../html/css/reseller.css">
-    <link rel="stylesheet" href="css/reseller_Navbar.css">
-      <!--for icon / fontawesome <i></i>-->
-      <script src="https://kit.fontawesome.com/1c38d71225.js" crossorigin="anonymous"></script>
-         <!-- animate cdn -->
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/nav-section.css">
+    <link rel="stylesheet" href="../css/footer-section.css">
+    <script src="https://kit.fontawesome.com/1c38d71225.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 </head>
 <body>
-    
         <!--nav section.css-->
         <nav class="nav-bar">
             <div class="nav-container">
-                <div class="logo">   <!--Logo -->
-                     <!-- <img src="image/icon.jpg" alt="title">   -->
+                <div class="logo">
                     <h1>UML Tool Myanmar</h1>
                 </div>
-                <div class="open-close-bar"> <!--open close bar -->
+                <div class="open-close-bar"> 
                     <div class="open" id="open-bar">
-                        <i class="faz fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-bars"></i>
                     </div>
                     <div class="close" id="close-bar">
-                        <i class="faz fa-solid fa-xmark"></i>
+                        <i class="fas fa-solid fa-xmark"></i>
                     </div>
                 </div>
                 <ul class="menu-item">
                     <li><a href="../index.html"><i class="fas fa-solid fa-house-chimney"></i> Home</a></li>
-                    <li><a href="../html/v4.html"><i class="fas fa-solid fa-cloud-arrow-down"></i> Download</a></li>
-                    <li><a href="supporting.html"><i class="fas fa-solid fa-circle-info"></i> Supporting</a></li>
-                    <li><a href="https://youtube.com/channel/UCxzcCD92AKaJgL86iHZhyKg"></i><i class="fa-brands fa-youtube"></i> Tutorial</a></li>
-                    <li><a href="https://www.facebook.com/UMYOLAY1998/"><i class="fas fa-solid fa-circle-question"></i> About</a></li>
-                </ul>
+                    <li><a href="../index.html#download"><i class="fas fa-solid fa-cloud-arrow-down"></i> Download</a></li>
+                    <li><a href="../index.html#driver"><i class="fas fa-brands fa-usb"></i> Drivers</a></li>
+                    <li id="supporting"><a href="../html/supporting.html"><i class="fas fa-solid fa-circle-info"></i> Supporting</a></li>
+                    <li id="reseller"><a href="../html/supporting.html"><i class="fas fa-solid fa-people-group"></i> Reseller & Contact</a></li>
+                    <li id="tutorial"><a href="https://www.youtube.com/channel/UC0RAABOmoydNGSLA2_fCrsQ"></i><i class="fas fa-brands fa-youtube"></i> Tutorial</a></li>
+                    <li id="about"><a href="https://www.facebook.com/profile.php?id=100087222994892&mibextid=ZbWKwL"><i class="fas fa-solid fa-circle-question"></i> About</a></li>
+                </ul>   
             </div>
-        </nav>
-   <div class="reseller"> <!----control css ../css/reseller.css-->
-    <div class="reseller-container">
-        <h1 class="title"> Developer & Reseller List</h1>
-        <div class="developer-section">      
-            <div class="container">
-                <!-- <div class="image-container wow animate__backInRight"data-wow-duration="2s" data-wow-delay="0s"> -->
-                <!--------card 1 --------->
-                <div class="card wow animate__backInUp"data-wow-duration="2s" data-wow-delay="0s">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="../image/photo/photo.jpg" alt="">
+          </nav>
+          <section>
+            <div class="reseller">
+                 <h1 class="title wow animate__backInDown"data-wow-duration="2s" data-wow-delay="0s">Developer & Reseller List</h1>
+                <div class="card-container">
+                    <!---card 1-->
+                    <div class="card wow animate__backInLeft"data-wow-duration="2s" data-wow-delay="0s">
+                        <div class="imageBx">
+                            <img src="../image/photo/photo.jpg" >
+                            <img src="../image/photo/uml2.jpg" class="back-photo"> 
                         </div>
-                        <div class="contentBx">
-                            <h4>U Myo Lay</h4><br>
-                            <h5><i class="fa-solid fa-code"></i> C# Developer</h5>
+                        <div class="contact">
+                            <div class="detial">
+                                 <div class="info">
+                                    <h2><i class="fa-solid fa-user"></i> U Myo Lay </h2> 
+                                    <h3><i class="fa fa-solid fa-code"></i> C# Developer</h3> 
+                                 </div>
+                                <div class="data">
+                                    <p><i class="fa fa-solid fa-briefcase"></i> Admin - UML Tool</p>
+                                    <p><i class="fa fa-solid fa-earth-asia"></i> Region - Myanmar </p>
+                                    <p><i class="fa fa-solid fa-location-dot"></i> Live - Yangon</p>
+                                    <p><i class="fa fa-solid fa-phone"></i> +9509-775544234</p>               
+                                </div> 
+                                <div class="click-btn">
+                                    <div class="Msg">
+                                        <a href="https://m.me/j/AbYp9Y61OPmgVJuf/" class="mgr"><i class="fa-brands fa-facebook-messenger"></i> Message</a>
+                                    </div>
+                                    <div class="Msg">
+                                        <a href="#" class="what"><i class="fa-brands fa-whatsapp"></i> Message</a>
+                                    </div>     
+                                </div>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/u.m.lay.1004837"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://www.youtube.com/channel/UC0RAABOmoydNGSLA2_fCrsQ"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://t.me/umltool"><i class="fa-brands fa-telegram"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="sci">
-                            <a href="https://www.youtube.com/channel/UC0RAABOmoydNGSLA2_fCrsQ" class="youtube"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.facebook.com/u.m.lay.1004837" class="fb"><i class="fb fa-brands fa-facebook"></i></a>
-                            <a href="https://m.me/j/AbYp9Y61OPmgVJuf/"><i class="fb fa-brands fa-facebook-messenger"></i></a>
-                            <a href="https://t.me/umltool" class="tlg"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                      <!---card 2-->
+                      <div class="card wow animate__backInRight"data-wow-duration="2s" data-wow-delay="0s">
+                        <div class="imageBx">
+                            <img src="../image/photo/lasam2.jpg" >
+                            <img src="../image/photo/lasam.jpg" class="back-photo"> 
                         </div>
-                        <div class="flag">
-                            <img src="../image/flag/myanmar.png" alt="">
+                        <div class="contact">
+                            <div class="detial">
+                                 <div class="info">
+                                    <h2><i class="fa-solid fa-user"></i> Lasam Seng Naw </h2> 
+                                    <h3><i class="fa fa-solid fa-code"></i> Web Developer</h3> 
+                                 </div>
+                                <div class="data">
+                                    <p><i class="fa fa-solid fa-briefcase"></i> Admin - Lsnp Unlocker</p>
+                                    <p><i class="fa fa-solid fa-earth-asia"></i> Region - Myanmar </p>
+                                    <p><i class="fa fa-solid fa-location-dot"></i> Live - Hopin</p>
+                                    <p><i class="fa fa-solid fa-phone"></i> +959-686575308</p>               
+                                </div> 
+                                <div class="click-btn">
+                                    <div class="Msg">
+                                        <a href="http://m.me/lasam.pung" class="mgr"><i class="fa-brands fa-facebook-messenger"></i> Message</a>
+                                    </div>
+                                    <div class="Msg">
+                                        <a href="#" class="what"><i class="fa-brands fa-whatsapp"></i> Message</a>
+                                    </div>     
+                                </div>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/lasam.pung"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://t.me/lasamsengnaw"><i class="fa-brands fa-telegram"></i></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>    
-                </div>         
-                   <!--------card 2 --------->
-                   <div class="card wow animate__backInUp"data-wow-duration="3s" data-wow-delay="0s">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="../image/photo/lasam.jpg" alt="">
+                    </div>
+                     <!---card 3-->
+                     <div class="card wow animate__backInRight"data-wow-duration="2s" data-wow-delay="0s">
+                        <div class="imageBx">
+                            <img src="../image/photo/uml3.jpg" >
+                            <img src="../image/photo/uml.png" class="back-photo"> 
                         </div>
-                        <div class="contentBx">
-                            <h4>Lasam Seng Naw</h4><br>
-                            <h5><i class="fa-solid fa-code"></i> Web Developer</h5>
+                        <div class="contact">
+                            <div class="detial">
+                                 <div class="info">
+                                    <h2><i class="fa-solid fa-user"></i> UML Tool </h2> 
+                                    <h3><i class="fa fa-solid fa-code"></i> Admin</h3> 
+                                 </div>
+                                <div class="data">
+                                    <p><i class="fa fa-solid fa-briefcase"></i> Admin - UML Tool</p>
+                                    <p><i class="fa fa-solid fa-earth-asia"></i> Region - Myanmar </p>
+                                    <p><i class="fa fa-solid fa-location-dot"></i> Live - Yangon</p>
+                                    <p><i class="fa fa-solid fa-phone"></i> +9509-888437153</p>               
+                                </div> 
+                                <div class="click-btn">
+                                    <div class="Msg">
+                                        <a href="https://m.me/j/AbYp9Y61OPmgVJuf/" class="mgr"><i class="fa-brands fa-facebook-messenger"></i> Message</a>
+                                    </div>
+                                    <div class="Msg">
+                                        <a href="#" class="what"><i class="fa-brands fa-whatsapp"></i> Message</a>
+                                    </div>     
+                                </div>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/profile.php?id=100087222994892&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://www.youtube.com/@umltoolmyanmarofficial6329"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://t.me/umltool"><i class="fa-brands fa-telegram"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="sci">
-                            <a href="https://www.facebook.com/lasam.pung" class="fb"><i class="fb fa-brands fa-facebook"></i></a>
-                            <a href="https://m.me/j/AbYp9Y61OPmgVJuf/"><i class="fb fa-brands fa-facebook-messenger"></i></a>
+                    </div>            
+                     <!---card 4-->
+                     <div class="card wow animate__backInLeft"data-wow-duration="2s" data-wow-delay="0s">
+                        <div class="imageBx">
+                            <img src="../image/photo/lsnp.png" >
+                            <img src="../image/photo/lsnp.png" class="back-photo"> 
                         </div>
-                        <div class="flag">
-                            <img src="../image/flag/myanmar.png" alt="">
+                        <div class="contact">
+                            <div class="detial">
+                                 <div class="info">
+                                    <h2><i class="fa-solid fa-user"></i> Lsnp Unlocker </h2> 
+                                    <h3><i class="fa fa-solid fa-code"></i> Reseller</h3> 
+                                 </div>
+                                <div class="data">
+                                    <p><i class="fa fa-solid fa-briefcase"></i> Admin - Lsnp Unlocker</p>
+                                    <p><i class="fa fa-solid fa-earth-asia"></i> Region - Myanmar </p>
+                                    <p><i class="fa fa-solid fa-location-dot"></i> Live - Hopin</p>
+                                    <p><i class="fa fa-solid fa-phone"></i> +959440376760</p>               
+                                </div> 
+                                <div class="click-btn">
+                                    <div class="Msg">
+                                        <a href="https://t.me/lsnp_unlocker_official" class="mgr"><i class="fa-brands fa-facebook-messenger"></i> Message</a>
+                                    </div>
+                                    <div class="Msg">
+                                        <a href="https://wa.me/+959686575308" class="what"><i class="fa-brands fa-whatsapp"></i> Message</a>
+                                    </div>     
+                                </div>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/lsnpunlocker"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://wa.me/+959686575308"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://www.youtube.com/@lsnpunlockerofficial/videos"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://t.me/lsnp_unlocker_official"><i class="fa-brands fa-telegram"></i></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>    
-                </div> 
-                 <!--------card 3 --------->
-                 <div class="card wow animate__backInUp"data-wow-duration="4s" data-wow-delay="0s">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="../image/photo/uml.png" alt="">
+                    </div>
+                      <!---card 5-->
+                      <div class="card wow animate__backInRight"data-wow-duration="2s" data-wow-delay="0s">
+                        <div class="imageBx">
+                            <img src="../image/photo/htat aung kyaw 2.jpg" >
+                            <img src="../image/photo/htat aung kyaw.jpg" class="back-photo"> 
                         </div>
-                        <div class="contentBx">
-                            <h4>UML Tool</h4><br>
-                            <h5><i class="fa-solid fa-code"></i> Admin</h5>
+                        <div class="contact">
+                            <div class="detial">
+                                 <div class="info">
+                                    <h2><i class="fa-solid fa-user"></i> ထက်အောင်ကျော် </h2> 
+                                    <h3><i class="fa fa-solid fa-code"></i> Reseller</h3> 
+                                 </div>
+                                <div class="data">
+                                    <p><i class="fa fa-solid fa-briefcase"></i> Admin - HAK Mobile Services</p>
+                                    <p><i class="fa fa-solid fa-earth-asia"></i> Region - Myanmar </p>
+                                    <p><i class="fa fa-solid fa-location-dot"></i> Live - Magway,Burma</p>
+                                    <p><i class="fa fa-solid fa-phone"></i> +9509-267777628</p>               
+                                </div> 
+                                <div class="click-btn">
+                                    <div class="Msg">
+                                        <a href="https://m.me/hakmobile" class="mgr"><i class="fa-brands fa-facebook-messenger"></i> Message</a>
+                                    </div>
+                                    <div class="Msg">
+                                        <a href="#" class="what"><i class="fa-brands fa-whatsapp"></i> Message</a>
+                                    </div>     
+                                </div>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/hakmobile?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCYnP6Z_z0gZMykM-JwcKABQ/videos"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="http://www.hakmobile.top/"><i class="fa-brands fa-telegram"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="sci">
-                            <a href="https://www.youtube.com/channel/UCYnP6Z_z0gZMykM-JwcKABQ/videos" class="youtube"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100087222994892&mibextid=ZbWKwL" class="fb"><i class="fb fa-brands fa-facebook"></i></a>
-                            <a href="https://m.me/j/AbYp9Y61OPmgVJuf/"><i class="fb fa-brands fa-facebook-messenger"></i></a>
-                            <a href="https://t.me/umltool" class="tlg"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                      <!---card 6-->
+                      <div class="card wow animate__backInRight"data-wow-duration="2s" data-wow-delay="0s">
+                        <div class="imageBx">
+                            <img src="../image/photo/lawelay 2.jpg" >
+                            <img src="../image/photo/lawelay.jpg" class="back-photo"> 
                         </div>
-                        <div class="flag">
-                            <img src="../image/flag/myanmar.png" alt="">
+                        <div class="contact">
+                            <div class="detial">
+                                 <div class="info">
+                                    <h2><i class="fa-solid fa-user"></i> လွိုင်လေး </h2> 
+                                    <h3><i class="fa fa-solid fa-code"></i> Reseller</h3> 
+                                 </div>
+                                <div class="data">
+                                    <p><i class="fa fa-solid fa-briefcase"></i> Admin - U LOI MIN KHIN</p>
+                                    <p><i class="fa fa-solid fa-earth-asia"></i> Region - Myanmar </p>
+                                    <p><i class="fa fa-solid fa-location-dot"></i> Live - Pyinmana</p>
+                                    <p><i class="fa fa-solid fa-phone"></i> +9509-55633197</p>               
+                                </div> 
+                                <div class="click-btn">
+                                    <div class="Msg">
+                                        <a href="https://m.me/loiminkhin6419" class="mgr"><i class="fa-brands fa-facebook-messenger"></i> Message</a>
+                                    </div>
+                                    <div class="Msg">
+                                        <a href="#" class="what"><i class="fa-brands fa-whatsapp"></i> Message</a>
+                                    </div>     
+                                </div>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/loiminkhin6419?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                                    <a href="https://t.me/loilay"><i class="fa-brands fa-telegram"></i></a>
+                                </div>
+                            </div>
                         </div>
-                    </div>    
-                </div>     
-                <!--------card 4 --------->
-                <div class="card wow animate__backInUp"data-wow-duration="5s" data-wow-delay="0s">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="../image/photo/lawelay.jpg" alt="">
-                        </div>
-                        <div class="contentBx">
-                            <h4>လွိုင်လေး</h4><br>
-                            <h5><i class="fa-solid fa-user"></i> Reseller</h5>
-                        </div>
-                        <div class="sci">
-                            <a href="https://www.facebook.com/loiminkhin6419?mibextid=ZbWKwL" class="fb"><i class="fb fa-brands fa-facebook"></i></a>
-                            <a href="https://m.me/loiminkhin6419"><i class="fb fa-brands fa-facebook-messenger"></i></a>
-                            <a href="https://t.me/loilay" class="tlg"><i class="fa-brands fa-telegram"></i></a>
-                        </div>
-                        <div class="flag">
-                            <img src="../image/flag/myanmar.png" alt="">
-                        </div>
-                    </div>    
-                </div>  
-                <!--------card 5 --------->
-                <div class="card wow animate__backInUp"data-wow-duration="6s" data-wow-delay="0s">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="../image/photo/htat aung kyaw.jpg" alt="">
-                        </div>
-                        <div class="contentBx">
-                            <h4>ထက်အောင်ကျော်</h4><br>
-                            <h5><i class="fa-solid fa-user"></i> Reseller</h5>
-                        </div>
-                        <div class="sci">
-                            <a href="https://www.youtube.com/channel/UCYnP6Z_z0gZMykM-JwcKABQ/videos" class="youtube"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.facebook.com/hakmobile?mibextid=ZbWKwL" class="fb"><i class="fb fa-brands fa-facebook"></i></a>
-                            <a href="https://m.me/hakmobile"><i class="fb fa-brands fa-facebook-messenger"></i></a>
-                            <a href="http://www.hakmobile.top/?fbclid=IwAR0GDUN0UDIkU11-LHZA9eMFpjq7ZHV2ND-uzhNH1gv5deD2DmGx2v45pYw" class="tlg"><i class="fa-brands fa-internet-explorer"></i></a>
-                        </div>
-                        <div class="flag">
-                            <img src="../image/flag/myanmar.png" alt="">
-                        </div>
-                    </div>    
-                </div>   
-                 <!--------card 6 --------->
-                 <div class="card wow animate__backInUp"data-wow-duration="7s" data-wow-delay="0s">
-                    <div class="content">
-                        <div class="imgBx">
-                            <img src="../image/photo/lsnp.png" alt="">
-                        </div>
-                        <div class="contentBx">
-                            <h4>Lsnp Unlocker</h4><br>
-                            <h5><i class="fa-solid fa-user"></i> Reseller</h5>
-                        </div>
-                        <div class="sci">
-                            <a href="https://www.youtube.com/channel/UCX1I61STrL8Veo7PQM5JPzg" class="youtube"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="https://www.facebook.com/lsnpunlocker" class="fb"><i class="fb fa-brands fa-facebook"></i></a>
-                            <a href="https://t.me/lsnp_unlocker_official" class="tlg"><i class="fa-brands fa-telegram"></i></a>
-                            <a href="https://lsnpunlocker.com/"class="tlg"><i class="fa-brands fa-internet-explorer"></i></a>
-                        </div>
-                        <div class="flag">
-                            <img src="../image/flag/myanmar.png" alt="">
-                        </div>
-                    </div>    
-                </div>                
-        </div>                 
-    </div>    
-     </div>
-   </div>
-
-   <script src="../js/open-close.js"></script>
-    <!-- wow cdn link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </section>
+         <!-------- footer-section.css ------>
+   <footer>
+    <div class="footer  animate__backInLeft" data-wow-duration="2s" data-wow-delay="0s">
+      <div class="footer-container">
+          <div class="footer-logo-container wow animate__backInLeft" data-wow-duration="2s" data-wow-delay="0s">   
+              <h2> Social Media</h2>                
+              <div class="footer-social">
+                  <a href="https://www.youtube.com/@umyolayumltool6377"><i class="fa fa-brands fa-youtube"></i></a>
+                  <a href="https://www.facebook.com/UMYOLAY1998/"><i class="fa fa-brands fa-facebook"></i></a>
+                  <a href="https://m.me/j/AbYp9Y61OPmgVJuf/"><i class="fa fa-brands fa-facebook-messenger"></i></a>
+                  <a href="https://t.me/+zo9TQJywSnNiNTc1"><i class="fa fa-brands fa-telegram"></i></a>
+              </div>
+          </div>
+           <div class="footer-menu wow animate__backInLeft" data-wow-duration="2.1s" data-wow-delay="0s">
+              <div class="footer-menu-box">
+                  <h2> address</h2>
+                  <ul>
+                      <li><a>No.91 , Min Ye Kyaw Swar ,  </a></li>
+                      <li><a >Street & Corner of 3 Street , Yangon  </a></li>
+                      <li><a ><i class="fa-solid fa-mobile-screen-button"></i> AUNG MOBILE (Sell ,Service & Accessories) </a></li>
+                      <li><a ><i class="fa-solid fa-phone"></i> 09-888437153 </a></li>
+                      <li><a ><i class="fa-solid fa-phone"></i> 09-775544234</a></li>
+                      <li><a ></a></li>
+                  </ul>
+              </div>
+           </div>    
+           <div class="footer-menu wow animate__backInRight" data-wow-duration="2.1s" data-wow-delay="0s">
+              <div class="footer-menu-box">
+                  <h2>App</h2>
+                  <ul>
+                      <li><a href="html/v4.html">Window</a></li>
+                      <li><a href="html/v4.html">Direct Download</a></li>
+                      <li><a href="html/v4.html">Zip Download</a></li>
+                  </ul>
+                </div>
+           </div>   
+           <div class="footer-menu wow animate__backInRight" data-wow-duration="2s" data-wow-delay="0s">
+              <div class="footer-menu-box">
+                  <h2> Contact Us</h2>
+                  <ul>
+                      <li><a><i class="fa-solid fa-envelope"></i> umltoolmyanmar@gmail.com</a></li>
+                      <li><a><i class="fa-solid fa-envelope"></i> layumyo7@gmail.com</a></li>
+                      <li><a><i class="fa-solid fa-envelope"></i> tooluml60@gmail.com</a></li>
+                      <li><a><i class="fa-brands fa-viber"></i> +9509888437153</a></li>
+                      <li><a><i class="fa-solid fa-phone"></i> +9509775544234</a></li>
+                  </ul>
+              </div>
+           </div>      
+      </div>
+     </div> 
    
+ </footer>
+   <script src="../js/open-close.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script type="text/javascript">
-         new WOW().init();
+          new WOW().init();
    </script> 
 </body>
 </html>
