@@ -390,7 +390,9 @@
     }
 }
 @media(max-width:600px) {
-   
+    .title {
+        position: unset;
+    }
     .photo-box-continer {
         gap: 20px;
     }
