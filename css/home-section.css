@@ -253,7 +253,10 @@
     width: 400px;
     height: 250px;
    }
- 
+  .text-container {
+    margin-top: 60px;
+     padding-left: 10px;
+  }
 }
 @media(max-width:800px) {
   #particles-js {
